@@ -245,7 +245,7 @@ p {
   height: 100%;
   width: 100%;
   /* Change Background Color */
-  background: #fff;
+  background: #17202b;
   z-index: 99999;
 }
 
@@ -309,7 +309,7 @@ p {
   height: 100%;
   border-style: solid;
   /* Spinner Color */
-  border-color: #4E6EF1 #4E6EF1 #ddd;
+  border-color: #0c969c #6ba3be #ddd;
   border-radius: 50%;
   border-width: 6px;
 }
