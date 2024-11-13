@@ -524,14 +524,13 @@ p {
   position: relative;
   margin-left: 40px;
 }
-
 .navbar-nav .nav-item a {
   font-size: 18px;
   font-weight: 400;
   color: #274d60;
-  transition: all 0.3s ease-out 0s;
   padding: 10px 0;
   position: relative;
+  transition: color 0.3s ease-out;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -550,35 +549,26 @@ p {
   }
 }
 
-.navbar-nav .nav-item a::after, .navbar-nav .nav-item a::before {
+.navbar-nav .nav-item a::after {
   content: '';
   position: absolute;
   bottom: 0;
-  height: 2px;
-  background: #4E6EF1;
-  z-index: -1;
-  opacity: 0;
-  border-radius: 10px;
-  transition: all 0.3s ease-out 0s;
-}
-
-.navbar-nav .nav-item a::before {
-  width: 70%;
   left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #4E6EF1;
+  transform: scaleX(0); /* Start with no underline */
+  transform-origin: bottom right; /* Animation origin */
+  transition: transform 0.3s ease-out;
 }
 
-.navbar-nav .nav-item a::after {
-  width: 20%;
-  right: 0;
+.navbar-nav .nav-item a:hover::after {
+  transform: scaleX(1); /* Underline grows to full width */
+  transform-origin: bottom left; /* Origin point for left-to-right animation */
 }
 
-.navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
-  color: #4E6EF1;
-}
 
-.navbar-nav .nav-item a:hover::after, .navbar-nav .nav-item a:hover::before, .navbar-nav .nav-item a.active::after, .navbar-nav .nav-item a.active::before {
-  opacity: 1;
-}
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-nav .nav-item a:hover::after, .navbar-nav .nav-item a:hover::before, .navbar-nav .nav-item a.active::after, .navbar-nav .nav-item a.active::before {
