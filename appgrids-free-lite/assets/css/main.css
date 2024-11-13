@@ -203,7 +203,7 @@ p {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #4E6EF1;
+  background: #0a7075;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,7 +220,7 @@ p {
 
 .scroll-top:hover {
   color: #fff;
-  background: rgba(78, 110, 241, 0.8);
+  background: rgb(11, 178, 187);
 }
 
 @keyframes animation1 {
