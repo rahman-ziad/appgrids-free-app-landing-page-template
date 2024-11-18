@@ -969,6 +969,7 @@ p {
 .about-us-section h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #2B7AC0;
 }
 .about-us-section p {
   font-size: 1.1rem;
@@ -997,7 +998,7 @@ p {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #4BACFF;
+  color: #2B7AC0;
 }
 .team-card p {
   font-size: 0.9rem;
