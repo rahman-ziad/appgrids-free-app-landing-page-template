@@ -773,8 +773,8 @@ p {
   border-color: #0a7075;
 }
 .hero-section .hero-img img{
-  padding-left: 10px;
-  width: 115%;
+  
+  width: 125%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero-section .hero-img img {
